@@ -1,0 +1,55 @@
+@utility font-f1 {
+  @apply text-[3rem] leading-14.5 font-bold;
+}
+
+@utility font-f2 {
+  @apply text-[1.875rem] leading-9 font-bold;
+}
+
+@utility font-f3 {
+  @apply text-[1.5rem] leading-8 font-bold;
+}
+
+@utility font-f4 {
+  @apply text-[1.25rem] leading-7 font-bold;
+}
+
+@utility font-f5 {
+  @apply text-[1.125rem] leading-7 font-bold;
+}
+
+@utility font-f6 {
+  @apply text-[1rem] leading-5 font-bold;
+}
+
+@utility font-f7 {
+  @apply text-[0.875rem] leading-5 font-bold;
+}
+
+@utility font-f8 {
+  @apply text-[1.25rem] leading-7 font-normal;
+}
+
+@utility font-f9 {
+  @apply text-[1.125rem] leading-7 font-medium;
+}
+
+@utility font-f10 {
+  @apply text-[1rem] leading-6 font-medium;
+}
+
+@utility font-f11 {
+  @apply text-[1rem] leading-6 font-normal;
+}
+
+@utility font-f12 {
+  @apply text-[0.875rem] leading-5 font-medium;
+}
+
+@utility font-f13 {
+  @apply text-[0.875rem] leading-5 font-normal;
+}
+
+@utility font-f14 {
+  @apply text-[0.75rem] leading-4 font-normal;
+}

@@ -1,0 +1,101 @@
+{
+  "errors": {
+    "globalErrorDefault": "An unexpected error occurred. Please try again later."
+  },
+  "notFound": {
+    "label": "404 Error",
+    "title": "Page not found",
+    "description": "The page you are looking for does not exist, may have been moved, or the URL might be incorrect.",
+    "primaryCta": "Go to homepage"
+  },
+  "buttonBack": {
+    "back": "Back"
+  },
+  "brandName": {
+    "title": "Peiko",
+    "tagline": "You Can Bank On It"
+  },
+  "landing": {
+    "footer": {
+      "rights": "2026 Peiko. All rights reserved"
+    }
+  },
+  "swapInterface": {
+    "hero": {
+      "title": "Swap Interface",
+      "description": "A production-ready crypto swap interface with quote updates, route details, slippage controls, and recent activity. Built for exchange and wallet products."
+    },
+    "metrics": {
+      "bestRoute": "Best route",
+      "networkFee": "Network fee",
+      "referencePair": "Reference pair"
+    },
+    "trust": {
+      "title": "Secure swap flow",
+      "description": "The interface shows a complete swap flow with API-style data handling, validation states, and transaction feedback.",
+      "items": {
+        "noCustody": {
+          "title": "No custody",
+          "description": "No keys or wallet data are collected."
+        },
+        "mocked": {
+          "title": "Quote flow",
+          "description": "Quote updates are handled through an API-style data layer."
+        },
+        "api": {
+          "title": "API-first",
+          "description": "All data flows through axios endpoints."
+        }
+      }
+    },
+    "widget": {
+      "title": "Instant swap",
+      "description": "Preview a route and prepare a token exchange."
+    },
+    "network": {
+      "label": "Network"
+    },
+    "form": {
+      "youPay": "You pay",
+      "youReceive": "You receive",
+      "balance": "Balance",
+      "fromToken": "Source token",
+      "toToken": "Destination token",
+      "amountPlaceholder": "0.00",
+      "switchTokens": "Switch tokens",
+      "slippage": "Slippage tolerance",
+      "swapButton": "Swap now",
+      "reviewButton": "Review swap"
+    },
+    "quote": {
+      "title": "Quote details",
+      "route": "Route",
+      "rate": "Rate",
+      "networkFee": "Network fee",
+      "priceImpact": "Price impact",
+      "minimumReceived": "Minimum received",
+      "estimatedTime": "Estimated time",
+      "noQuote": "No quote yet"
+    },
+    "status": {
+      "enterAmount": "Enter an amount to receive a quote.",
+      "sameToken": "Choose two different tokens.",
+      "insufficientBalance": "Insufficient balance for this swap.",
+      "ready": "Quote is ready for review.",
+      "loading": "Refreshing quote..."
+    },
+    "recentSwaps": {
+      "title": "Recent swaps",
+      "description": "Recent swap activity returned by the API data layer.",
+      "empty": "No swaps yet.",
+      "status": {
+        "completed": "Completed",
+        "processing": "Processing",
+        "failed": "Failed"
+      }
+    },
+    "toast": {
+      "success": "Swap completed successfully."
+    }
+  }
+}

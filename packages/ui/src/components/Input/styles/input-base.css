@@ -1,0 +1,63 @@
+@layer utilities {
+  .input-base {
+    @apply outline-none focus:outline-none focus:ring-0;
+    transition: border-color 150ms ease-in-out;
+  }
+
+  .input-base:disabled {
+    @apply pointer-events-none cursor-not-allowed;
+  }
+
+  .input-base[readonly] {
+    @apply cursor-default;
+  }
+
+  .input-base:focus {
+    @apply outline-none;
+  }
+
+  .input-base:-webkit-autofill,
+  .input-base:-webkit-autofill:hover,
+  .input-base:-webkit-autofill:focus,
+  .input-base:-webkit-autofill:active {
+    box-shadow: 0 0 0 1000px transparent inset;
+    transition: background-color 9999s ease-in-out 0s;
+  }
+
+  .input-base-wrapper {
+    @apply flex items-center outline-none;
+    transition: border-color 150ms ease-in-out;
+  }
+
+  .input-base-wrapper[data-disabled="true"] {
+    @apply pointer-events-none cursor-not-allowed;
+  }
+
+  .input-base-field {
+    @apply h-full w-full flex-1 outline-none;
+  }
+
+  .input-base[type="password"]:not(:placeholder-shown),
+  .input-base-field[type="password"]:not(:placeholder-shown),
+  .input-base.input-base-secret-mask:not(:placeholder-shown),
+  .input-base-field.input-base-secret-mask:not(:placeholder-shown) {
+    font-family:
+      system-ui,
+      -apple-system,
+      "Segoe UI",
+      Roboto,
+      sans-serif;
+  }
+
+  .input-base-field:-webkit-autofill,
+  .input-base-field:-webkit-autofill:hover,
+  .input-base-field:-webkit-autofill:focus,
+  .input-base-field:-webkit-autofill:active {
+    box-shadow: 0 0 0 1000px transparent inset;
+    transition: background-color 9999s ease-in-out 0s;
+  }
+
+  .input-base-adornment {
+    @apply flex shrink-0 items-center;
+  }
+}

@@ -1,0 +1,18 @@
+@utility button-base {
+  @apply /* Layout & Flexbox */
+    inline-flex items-center justify-center
+    /* Text layout */
+    whitespace-nowrap
+    /* Disabled states */
+    disabled:pointer-events-none disabled:cursor-not-allowed
+    /* SVG handling */
+    [&_svg]:pointer-events-none [&_svg]:shrink-0
+    /* Children layout */
+    [&>*]:inline-flex [&>*]:items-center
+    /* Interactive states */
+    outline-none select-none cursor-pointer appearance-none;
+
+  svg path {
+    fill: currentColor;
+  }
+}

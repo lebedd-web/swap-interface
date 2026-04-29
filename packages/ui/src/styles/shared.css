@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@source "../**/*.{ts,tsx}";
+
+@import "../components/Button/styles/button-base.css";
+@import "../components/Input/styles/input-base.css";
+@import "../components/Tabs/styles/tabs-base.css";
+@import "../components/Table/styles/table-base.css";
+
+@custom-variant dark (&:is(.dark *));

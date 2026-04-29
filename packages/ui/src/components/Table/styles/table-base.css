@@ -1,0 +1,38 @@
+@layer utilities {
+  .table-container {
+    @apply w-full max-w-full overflow-x-auto rounded-[6px] border border-main-5 bg-main-8 md:rounded-[8px];
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .table {
+    @apply w-full min-w-[320px] table-auto border-collapse md:min-w-full;
+  }
+
+  .table-header {
+    @apply border-b border-main-6;
+  }
+
+  .table-row {
+    @apply border-b border-main-6;
+  }
+
+  .table-row:last-child {
+    @apply border-b-0;
+  }
+
+  .table-head {
+    @apply px-3 py-2 text-center font-f13 text-main-7 whitespace-nowrap md:px-0 md:font-f11;
+  }
+
+  .table-cell {
+    @apply px-10 py-3 text-center font-f11 text-main-3 whitespace-nowrap md:px-0 md:font-f9;
+  }
+
+  .table-caption {
+    @apply mt-4 text-center font-f11 text-main-7;
+  }
+
+  .table-footer {
+    @apply border-t border-main-6;
+  }
+}

@@ -1,0 +1,50 @@
+/* Web App Theme - Main Entry Point */
+
+@import "@library/ui/shared.css";
+@import "../components/LinearLoader/styles/linear-loader.css";
+@import "./theme/colors.css";
+@import "./theme/fonts.css";
+@import "./theme/spacing.css";
+@import "./theme/breakpoints.css";
+@import "./theme/shadows.css";
+@import "./theme/radius.css";
+@import "./theme/scrollbar.css";
+@import "../components/Button/styles/button-outlined.css";
+
+@layer base {
+  * {
+    @apply border-base-3 outline-main-5/50;
+  }
+
+  html {
+    scrollbar-width: thin;
+    scrollbar-gutter: stable;
+  }
+
+  iframe {
+    background: transparent;
+    color-scheme: auto;
+  }
+
+  /*
+    Lock the scroll on the body and remove scrollbar offset when the dialog is open.
+    Used to prevent background scrolling while modal dialogs are active.
+  */
+  body[data-scroll-locked] {
+    margin-right: 0 !important;
+    --removed-body-scroll-bar-size: 0px !important;
+  }
+
+  body {
+    @apply bg-base-1 text-main-3 overflow-x-hidden;
+  }
+
+  li::marker {
+    color: var(--color-main-1);
+  }
+}
+
+@utility no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

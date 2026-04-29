@@ -1,0 +1,37 @@
+@layer utilities {
+  .tabs-list {
+    @apply flex items-center gap-2 rounded-[6px] bg-base-2 p-1;
+  }
+
+  .tabs-trigger {
+    @apply inline-flex items-center justify-center whitespace-nowrap rounded-[4px] px-3 py-2 font-f11 text-main-7 transition-colors outline-none;
+  }
+
+  .tabs-trigger:hover {
+    @apply text-main-3;
+  }
+
+  .tabs-trigger[data-state="active"] {
+    @apply bg-main-1 text-base-1;
+  }
+
+  .tabs-trigger:disabled {
+    @apply cursor-not-allowed text-main-5;
+  }
+
+  .tabs-trigger:disabled:hover {
+    @apply text-main-5;
+  }
+
+  .tabs-content {
+    @apply outline-none;
+  }
+}
+
+@media (min-width: 1024px) {
+  @layer utilities {
+    .tabs-trigger {
+      @apply font-f9;
+    }
+  }
+}

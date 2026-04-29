@@ -1,0 +1,11 @@
+@layer base {
+  /* Universal thin scrollbar with stable gutter */
+  .scrollbar-thin {
+    scrollbar-width: thin;
+  }
+
+  /* Hide scrollbar but keep scroll functionality */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
